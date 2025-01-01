@@ -3,8 +3,12 @@ import concurrent.futures
 import time
 import os
 from pystyle import Colors, Colorate
-import nguyenthanhngoc
-from nguyenthanhngoc import *
+def Write_Print(text, color, interval):
+    for char in text:
+        console.print(char, style=color, end="")
+        time.sleep(interval)
+    print() 
+Console = console
 from time import sleep
 def tv360(phone):
   data = '{"msisdn":"phone"}'
@@ -1935,7 +1939,7 @@ if __name__ == "__main__":
 
  while True:
     os.system('cls' if os.name == 'nt' else 'clear')
-    Write.Print("""
+    Write_Print("""
     ╔══════════════════════════════════════════════════════╗
     ║    Spam phone number | Dev by: AnAn    ║             ║
     ╚══════════════════════════════════════════════════════╝
@@ -1954,7 +1958,7 @@ if __name__ == "__main__":
 ⠀⠀⠀⠀⠀⠉⠻⣿⣿⡿⣿⣿⣯⠪⡖⠤⠤⠔⣀⣤⡃⠀⠀⡁⠀⣀⠄⠊⡜⠀
 ⠀⠀⠀⠀⠀⠀⠀⠈⠛⢿⡌⠙⢿⣾⡫⠅⠂⠉⠀⠀⠁⠪⢁⠈⠉⠀⠀⣸⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠚⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠉⠀⠀
-         \n""",Colors.blue, interval=0.0009)
+         \n""","blue", 0.0009)
     sleep(2)
     print(Colorate.Diagonal(Colors.blue_to_green,"""1: spam number """, ))
     print(Colorate.Diagonal(Colors.blue_to_green,"""2: exit """))
