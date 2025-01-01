@@ -4,7 +4,7 @@ import time
 import os
 from rich.console import Console
 from pystyle import Colors, Colorate
-console = Console
+Console = console
 def Write_Print(text, color, interval):
     for char in text:
         console.print(char, style=color, end="")
