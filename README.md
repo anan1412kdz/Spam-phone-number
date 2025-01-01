@@ -1,6 +1,6 @@
 # Spam-phone-number
 Chương trình tấn công các thiết bị di động thông qua số điện thoại nạn nhân
-# 
+# picture
 ![Screenshot](https://github.com/anan1412kdz/Pic/blob/main/Screenshot_20241231_002810_Termux.jpg?raw=true)
 # Tuyên bố miễn trừ trách nhiệm
 Dự án này là bằng chứng về khái niệm cho mục đích thử nghiệm và giáo dục.
