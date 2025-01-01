@@ -2,6 +2,7 @@ import requests
 import concurrent.futures
 import time
 import os
+console = Console
 from rich.console import Console
 from pystyle import Colors, Colorate
 def Write_Print(text, color, interval):
@@ -9,7 +10,7 @@ def Write_Print(text, color, interval):
         console.print(char, style=color, end="")
         time.sleep(interval)
     print() 
-Console = console
+
 from time import sleep
 def tv360(phone):
   data = '{"msisdn":"phone"}'
