@@ -2,6 +2,7 @@ import requests
 import concurrent.futures
 import time
 import os
+from rich.console import Console
 from pystyle import Colors, Colorate
 def Write_Print(text, color, interval):
     for char in text:
