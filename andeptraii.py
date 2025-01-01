@@ -2,16 +2,15 @@ import requests
 import concurrent.futures
 import time
 import os
+from time import sleep
 from rich.console import Console
 from pystyle import Colors, Colorate
-Console = console
 def Write_Print(text, color, interval):
     for char in text:
         console.print(char, style=color, end="")
         time.sleep(interval)
     print() 
-
-from time import sleep
+console = Console()
 def tv360(phone):
   data = '{"msisdn":"phone"}'
   data = data.replace("phone",phone)
