@@ -1910,16 +1910,3 @@ functions = [
     med, ghn, shop, sms3, gala, fa, vina, ahamove, air, otpmu, vtpost, shine, domi, fm, cir, hoanvu, tokyo, shop, beau, fu, lote, longchou
 ]
 
-def run(phone, i):
-    with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
-        futures = [executor.submit(fn, phone) for fn in functions]
-        for future in concurrent.futures.as_completed(futures):
-            try:
-                future.result()
-            except Exception as exc:
-                print(f'Generated an exception: {exc}')
-
-    print(f"Spam thành công lần {i}")
-    for j in range(4, 0, -1):
-        print(f"Vui lòng chờ {j} giây", end="\r")
-        time.sleep(1)
