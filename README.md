@@ -5,11 +5,11 @@ Chương trình tấn công các thiết bị di động thông qua số điện
 # Setup
 Termux
 ```bash 
-git clone https://github.com/anan1412kdz/Spam-phone-number && cd Spam-phone-number && pkg update && pkg install python git -y && pip install requests pystyle rich && python andeptraii.py
+git clone https://github.com/anan1412kdz/Spam-phone-number && cd Spam-phone-number && pkg update && pkg install python git -y && pip install requests pystyle rich && python Main.py
 ```
 Linux
 ```bash
-git clone https://github.com/anan1412kdz/Spam-phone-number && cd Spam-phone-number && sudo apt update && sudo apt install python3 git python3-pip -y && pip install requests pystyle rich && python3 andeptraii.py
+git clone https://github.com/anan1412kdz/Spam-phone-number && cd Spam-phone-number && sudo apt update && sudo apt install python3 git python3-pip -y && pip install requests pystyle rich && python3 Main.py
 ```
 # Tuyên bố miễn trừ trách nhiệm
 Dự án này là bằng chứng về khái niệm cho mục đích thử nghiệm và giáo dục.
